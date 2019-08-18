@@ -1,0 +1,156 @@
+.index-banner{
+    height:379px;
+    width: 1200px;
+    background: url("../images/index-banner-bg.png") no-repeat;
+}
+.index-banner .banner-description{
+    float:left;
+    margin-top:34px;
+    width:322px;
+}
+.index-banner .banner-description h2{
+    display: inline-block;
+    margin-left: 1px;
+    margin-bottom: 17px;
+    height: 21px;
+    color: #e9e9e9;
+}
+.index-banner .content-dot{
+    float: left;
+    width: 100%;
+    height: 1px;
+    background: url("../images/index-banner-dashline.png")
+}
+.index-banner .banner-description .banner-content{
+    display: block;
+    margin-left:4px;
+    margin-top:17px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b6b9b9;
+    line-height: 1.7em;
+    
+}
+.banner-description a{
+    float:left;
+    padding-top: 10px;
+    padding-left: 15px;
+    height: 46px;
+    width: 115px;
+    background:url("../images/readmore.png") no-repeat;
+}
+.banner-description a .readmore{
+    padding:17px;
+    font-size:17px;
+}
+.index-banner .index-banner-img {
+    position: absolute;
+    right:120px;
+    
+    top:30px;
+}
+
+.index-banner .index-banner-before{
+    position: absolute;
+    top:130px;
+    left:56px;
+    width: 24px;    
+    height: 82px;
+    background: url("../images/index-banner-before.png") no-repeat;
+}
+.index-banner .index-banner-next{
+    position: absolute;
+    top:130px;
+    right:56px;
+    width: 24px;    
+    height: 82px;
+    background: url("../images/index-banner-next.png") no-repeat;
+}
+.index-banner .index-banner-next a, .index-banner-before a{
+    width: 24px;    
+    height: 82px;
+}
+.index-banner .index-banner-btn{
+    bottom: 30px;
+    padding-left:552px;
+    left:552psx;
+    height:12px;
+}
+.index-banner-btn  .banner-btn, .banner-btn-active{
+    display: inline-block;
+    margin-right: 6px; 
+    width:12px;
+    height:12px;
+
+}
+.index-banner-btn .banner-btn {background: url("../images/index-banner-nav-none.png") no-repeat;}
+.index-banner-btn .banner-btn-active{background: url("../images/index-banner-nav.png") no-repeat;}
+
+.index-services{
+    height: 448px;
+    background:#fcfcfc;
+}
+
+.index-services h2{
+    position: absolute;
+    top:39px;
+    left:2px;
+    font-size:27px;
+    color: #5f686d;
+}
+.index-services .index-services-blocks{
+    
+    width: 960px;
+    height:330px;
+}
+.index-services-blocks .services-block{
+    display: inline-block;
+    top:90px;
+    margin-right: 28px;
+    height: 330px;
+    width:304px;
+    background: url("../images/index-services-block.png") no-repeat;
+}
+.services-block img{
+    position: absolute;
+    top:25px;
+    left:21px;
+    width:259px;
+    height:60px;
+}
+.services-block h3{
+    position: absolute;
+    width: 100%;
+    top:136px;
+    text-align: center;
+    font-size: 19px;
+    color:#949a9d;
+
+}
+
+.services-block .block-hr{
+    height:1px;
+    background: #f0f0f1;
+}
+.services-block .block-content{
+    position: relative;
+    left:23px;
+    top:189px;
+    width:258px;
+    font-size: 12px;
+    color:#747d82;
+}
+.services-block a{
+    position: absolute;
+    top:288px;
+    left:93px;
+    padding-top:12px;
+    padding-left:17px;
+    height: 47px;
+    width: 121px;
+    background:url("../images/readmore.png") no-repeat;
+}
+.services-block a .block-readmore{
+    margin-top:10px;
+    font-size:17px;
+}

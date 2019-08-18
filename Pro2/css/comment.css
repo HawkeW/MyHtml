@@ -1,0 +1,54 @@
+.index-header{
+    position: relative;
+    margin: 0 auto;
+    height: 141px;
+    width: 1200px;
+    background:url("../images/index-header-gb1.png") no-repeat; 
+}
+.index-header .index-header-logo{
+    position: absolute;
+    margin-top:10px;
+    left: 538px;
+    height: 118px;
+    width: 119px;
+    background:url("../images/index-logo.png");
+}
+
+
+.index-header .index-header-nav-l{
+    float:left;
+    padding-top: 46px;
+    margin-left:120px;
+    width:320px;
+    text-align: justify;
+    text-align-last:justify;
+}
+
+.index-header .index-header-nav-r{
+    float:right;
+    right: 10px;
+    padding-top: 46px;
+    margin-right: 120px;
+    width:388px;
+    text-align: justify;
+    text-align-last:justify;
+}
+.index-header .item{
+    display: inline-block;
+    font-size: 17px;
+    padding-top: 8px;
+}
+.index-header .item .active{  
+    height: 100%;
+    width: 100%;
+    background: url("../images/index-header-btn.png")
+}
+.index-container{
+    position: relative;
+    margin: 0 auto;
+    width:1200px;
+}
+.iner-container{
+    position: absolute;
+    left:120px;
+}
