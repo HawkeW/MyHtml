@@ -1,0 +1,322 @@
+/*Banner部分开始*/
+.index-banner-box{
+    background: url("../images/index-banner-bg1.png");
+}
+.index-banner {
+    background: url("../images/index-banner-bg.png") no-repeat;
+}
+
+.banner {
+    float: left;
+    height: 380px;
+    width: 966px;
+}
+
+.banner-description {
+    float: left;
+    width: 322px;
+    margin-right: 25px;
+}
+
+.banner-description>h2 {
+    padding-top: 32px;
+    padding-bottom: 17px;
+    height: 20px;
+    color: #e9e9e9;
+}
+
+.banner-description>p {
+    font-size: 13px;
+    color: #b6b9b9;
+    line-height: 1.8em;
+}
+
+.banner-description>a {
+    height: 44px;
+    width: 115px;
+}
+.banner>li{
+    display: inline;
+}
+.banner>li>img {
+    float: right;
+    padding-top: 30px;
+}
+
+.index-banner-next,
+.index-banner-before {
+    position: absolute;
+    top: 130px;
+    width: 24px;
+    height: 82px;
+}
+
+.index-banner-before {
+    left: 56px;
+    background: url("../images/index-banner-before.png") no-repeat;
+}
+
+.index-banner-next {
+    right: 56px;
+    background: url("../images/index-banner-next.png") no-repeat;
+}
+
+
+.banner-btn-box {
+    width: 88px;
+    height: 12px;
+    position: absolute;
+    bottom: 20px;
+    left: 397px;
+}
+
+.banner-btn-box li {
+    width: 12px;
+    height: 12px;
+    margin-right: 2px;
+}
+
+.banner-btn {
+    background: url("../images/index-banner-nav-none.png") no-repeat;
+}
+
+.banner-btn-active,
+.banner-btn:hover {
+    background: url("../images/index-banner-nav.png") no-repeat;
+}
+
+/*Banner部分结束*/
+
+/*Services部分开始*/
+.index-services {
+    height: 452px;
+}
+
+.block {
+    float: left;
+    margin-right: 28px;
+    height: 330px;
+    width: 303px;
+    background: url("../images/index-services-block.png") no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.block>img {
+    margin: 22px 22px 0 22px;
+}
+
+.block>h3 {
+    margin: 0;
+    padding-top: 40px;
+    text-align: center;
+    color: #aaa;
+}
+
+.block>p {
+    font-size: 13px;
+    margin: 10px 15px;
+    color: #aaa;
+    line-height: 1.8em;
+}
+
+.block>a {
+    position: absolute;
+    left: 88px;
+    bottom: 0px;
+
+}
+
+/*Services部分结束*/
+/*Portfolio部分开始*/
+.index-portfolio {
+    height: 590px;
+    background: url("../images/index-portfoliopng.png");
+}
+
+.portfolio-box {
+    /* position: relative; */
+    margin: 0 auto;
+    height: 440px;
+    overflow: hidden;
+}
+
+/* .portfolio-box ul,li{
+    display: inline-block;
+    padding:0px;
+    margin:0px;
+} */
+.portfolio {
+    /* display: inline-block; */
+    float: left;
+    width: 190px;
+    height: 440px;
+    margin-right: 8px;
+}
+
+.portfolio>li {
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.portfolio-banner {
+    position: relative;
+    /* border: pink; */
+    margin-right: 6px;
+    height: 440px;
+    width: 377px;
+    float: left;
+    background: url("../images/index-portfolio1.png") no-repeat;
+
+}
+
+.portfolio-banner>img {
+    float:right;
+    height: 208px;
+    width: 341px;
+    margin: 18px 0 18px;
+}
+.portfolio-banner>.close{
+    box-sizing: border-box;
+    height: 18px;
+    width: 18px;
+    margin-right: 2px;
+    padding-left: 3px;
+    float: right;
+    background-color: #484c4f; 
+    background-size: cover;
+}
+.portfolio-banner>h3 {
+    color: #f0f0f0;
+    margin: 15px 20px 5px 20px;
+    line-height: 1em;
+    font-size: 22px;
+}
+
+.portfolio-banner>p {
+    margin: 0 20px;
+    color: #d8d8d8;
+    font-size: 12px;
+    line-height: 1.8em;
+}
+
+.portfolio-banner>a {
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+}
+
+/*Portfolio部分结束*/
+
+/* Blog开始 */
+.index-blog {
+    height: 330px;
+    background: url("../images/index-blog-bg.png");
+}
+
+.blog-box {
+    height: 196px;
+}
+
+.blog {
+    display: inline-block;
+    width: 480px;
+}
+
+.blog-pic {
+    display: inline-block;
+    height: 200px;
+    width: 180px;
+
+}
+.blog-content {
+    position: relative;
+    float: right;
+    height: 200px;
+    width: 300px;
+}
+
+.blog-content > h3 {
+    color: #88949a;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.blog-content > p {
+    margin-left: 16px;
+    color: #88949a;
+    font-size: 12px;
+    line-height: 1.8em;
+}
+
+.blog-content > a {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+/* Blog结束 */
+/* footer 开始 */
+.index-footer {
+    background: url("../images/index-contact-bg.png") repeat-x;
+    height: 514px;
+    padding: 0 20px 0 20px;
+}
+
+.index-footer h2 {
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.index-footer p {
+    margin: 15px 5px;
+    color: #f0f0f0;
+    line-height: 1.8em;
+    font-size: 11px;
+}
+
+.index-footer .footer-box {
+    float: left;
+    width: 298px;
+    height: 433px;
+    margin-right: 35px;
+}
+
+.index-footer h2 {
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.index-footer .submit-box {
+    position: relative;
+    float: left;
+    width: 300px;
+
+}
+
+.submit-box > form > input{
+    box-sizing: border-box;
+    padding-left:20px;
+    margin-bottom: 10px; 
+    height: 33px;
+    font-size: 10px;
+    width: 218px;
+}
+
+.message {
+    box-sizing: border-box;
+    padding-top:10px;
+    padding-left: 20px;
+    height: 126px;
+    width: 303px;
+}
+
+.submit-box >a  {
+    font-size: 14px;
+}
+
+/* footer 结束 */

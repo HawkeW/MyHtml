@@ -1,91 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="css/reset.css"/>
-    <link rel="stylesheet" href="css/comment.css"/>
-    <link rel="stylesheet" href="css/index.css"/>
+    <title>灰调网页</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/comment.css" />
+    <link rel="stylesheet" href="css/index.css" />
 </head>
+
 <body>
-<div>
-    <div class="index-container index-header">
-        <div class="iner-container  clearfloat"></div>
-        <div class="index-header-nav-l">
-            <ul>
-                <li class="item"><a href="">HOME</a></li>
-                <li class="item"><a href="">ABOUT</a></li>
-                <li class="item active"><a href="">SERVICE</a></li>
-            </ul>
+    <div>
+        <!--Header开始-->
+        <div class="index-header-box">
+            <div class="index-header index-container">
+                <ul class="nav-l navSame">
+                    <li class="item"><a href="">HOME</a></li>
+                    <li class="item"><a href="">ABOUT</a></li>
+                    <li class="item" style="margin-right:0">
+                        <a class="active" href="">SERVICE</a></li>
+                </ul>
+                <img class="header-logo" src="./images/index-logo.png"></img>
+                <ul class="nav-r navSame">
+                    <li class="item"><a href="">BLOG</a></li>
+                    <li class="item"><a href="">PORTFOLIO</a></li>
+                    <li class="item" style="margin-right:0"><a href="">CONTACT</a></li>
+                </ul>
+            </div>
         </div>
-       <div class="index-header-nav-r">
-        <ul>
-                <li class="item"><a href="">BLOG</a></li>
-                <li class="item"><a href="">PORTFOLIO</a></li>
-                <li class="item"><a href="">CONTACT</a></li>
-             </ul>
-        </div>
-            
-        <div class="index-header-logo"></div>
-    </div>
-    
-    <div class="index-container index-banner"> 
-        <ul>
-            <li id="indexBanner1">
-                <div class="banner-description iner-container clearfloat">
-                    <h2>Project Name1</h2>
-                    <div class="content-dot"></div>
-                    <div class="banner-content">Use the Type Tool (T) to add a block of text underneath the horizontal line. Use the font Helvetica with the color white and the size 13pt. Go to the Character panel (Window > Character) and set the leading (the distance between lines of type) to 24 pt to make the text more readable.Go to the Character panel (Window > Character) and set the leading (the distance between lines of type) to 24 pt to make the text more readable.</div>
-                    <a class="read-more" href="">Read More</a>
-                </div>
-            
-                <div class="index-banner-img">
-                    <img src="images/Layer 10.png" alt="Banner 1">
-                </div>
-                <div class="index-banner-before"><a href="#indexBanner4"></a></div>
-                <div class="index-banner-next"><a href="#indexBanner2"></a></div>
-                <div class="index-banner-btn iner-container clearfloat">
-                    <ul>
-                        <li class="banner-btn-active"></li>
-                        <li class="banner-btn"></li>
-                        <li class="banner-btn"></li>
-                        <li class="banner-btn"></li>
-                        <li class="banner-btn"></li>
+        <!--Header结束-->
+        <!--Banner开始-->
+        <div class="index-banner-box">
+            <div class="index-banner index-container">
+                <a class="index-banner-before" href="#"></a>
+                <div class="iner-container clearfloat">
+                    <ul class="banner">
+                        <li id="indexBanner1">
+                            <div class="banner-description">
+                                <h2>Project Name1</h2>
+                                <hr>
+                                <p class="banner-content">Use the Type Tool (T) to add a block of text underneath the
+                                    horizontal line.
+                                    Use the font Helvetica with the color white and the size 13pt.
+                                    Go to the Character panel (Window > Character) and set the leading
+                                    (the distance between lines of type) to 24 pt to make the text more readable.
+                                    Go to the Character panel (Window > Character) and set the leading
+                                    (the distance between lines of type) to 24 pt to make the text more readable.</p>
+                                <a class="readmore" href="">Read More</a>
+                            </div>
+                            <img src="images/Layer 10.png" alt="Banner 1">
+                        </li>
+                        <li id="indexBanner2" style="visibility: hidden">
+                            <div class="banner-description">
+                                <h2>Project Name1</h2>
+                                <hr>
+                                <p class="banner-content">Use the Type Tool (T) to add a block of text underneath the
+                                    horizontal line.
+                                    Use the font Helvetica with the color white and the size 13pt.
+                                    Go to the Character panel (Window > Character) and set the leading
+                                    (the distance between lines of type) to 24 pt to make the text more readable.
+                                    Go to the Character panel (Window > Character) and set the leading
+                                    (the distance between lines of type) to 24 pt to make the text more readable.</p>
+                                <a class="readmore" href="">Read More</a>
+                            </div>
+                            <img src="images/Layer 9.png" alt="Banner2">
+                        </li>
+                        <li id="indexBanner3" style="visibility: hidden">
+                            <div class="banner-description">
+                                <h2>Project Name1</h2>
+                                <hr>
+                                <p class="banner-content">Use the Type Tool (T) to add a block of text underneath the
+                                    horizontal line.
+                                    Use the font Helvetica with the color white and the size 13pt.
+                                    Go to the Character panel (Window > Character) and set the leading
+                                    (the distance between lines of type) to 24 pt to make the text more readable.
+                                    Go to the Character panel (Window > Character) and set the leading
+                                    (the distance between lines of type) to 24 pt to make the text more readable.</p>
+                                <a class="readmore" href="">Read More</a>
+                            </div>
+                            <img src="images/Layer 8.png" alt="Banner3">
+                        </li>
+                        <ul class="banner-btn-box">
+                            <li class="banner-btn-active"></li>
+                            <li class="banner-btn"></li>
+                            <li class="banner-btn"></li>
+                            <li class="banner-btn"></li>
+                            <li class="banner-btn" style="margin-right: 0"></li>
+                        </ul>
                     </ul>
                 </div>
-            </li>
-    </div>
-    <div class="index-container index-services">
-        <div><h2>SERVICES</h2></div>
-        <div class="index-services-blocks">
-            <div class="services-block iner-container clearfloat">
-                <img src="images/index-services-webdesign.png" alt="webdesign1">
-                <h3>WEB DESIGN</h3>
-                <div class="block-hr"></div>
-                <p class="block-content">Use the Type Tool (T) to add a block of text underneath the horizontal line. Use the font Helvetica with the color white and the size 13pt. Go to the Character panel (Window > Character) and set the leading</p>
-                <a class="block-readmore" href="">Read More</a>
-            </div>
-            <div class="services-block iner-container clearfloat">
-                <img src="images/index-services-webdesign.png" alt="webdesign1">
-                <h3>WEB DESIGN</h3>
-                <div class="block-hr"></div>
-                <p class="block-content">Use the Type Tool (T) to add a block of text underneath the horizontal line. Use the font Helvetica with the color white and the size 13pt. Go to the Character panel (Window > Character) and set the leading</p>
-                <a class="block-readmore" href="">Read More</a>
-            </div>
-            <div class="services-block iner-container clearfloat">
-                <img src="images/index-services-webdesign.png" alt="webdesign1">
-                <h3>WEB DESIGN</h3>                    
-                <div class="block-hr"></div>
-                <p class="block-content">Use the Type Tool (T) to add a block of text underneath the horizontal line. Use the font Helvetica with the color white and the size 13pt. Go to the Character panel (Window > Character) and set the leading</p>
-                <a class="block-readmore" href="">Read More</a>
+                <a class="index-banner-next" href="#"></a>
             </div>
         </div>
+        <!--Banner结束-->
+        <!--Services开始-->
+        <div class="index-services index-container">
+            <div class="iner-container">
+                <h2>Services</h2>
+                <ul>
+                    <li class="block">
+                        <img src="images/index-services-webdesign.png" alt="">
+                        <h3>Web Design</h3>
+                        <hr>
+                        <p>Use the Type Tool (T) to add a block of text underneath the horizontal line. Use the font
+                            Helvetica with the color white and the size 13pt. Go to the Character panel (Window >
+                            Character) and set the leadin</p>
+                        <a class="readmore" href="#">Read More</a>
+                    </li>
+                    <li class="block">
+                        <img src="images/index-services-webdesign.png" alt="">
+                        <h3>Web Design</h3>
+                        <hr>
+                        <p>Use the Type Tool (T) to add a block of text underneath the horizontal line. Use the font
+                            Helvetica with the color white and the size 13pt. Go to the Character panel (Window >
+                            Character) and set the leadin</p>
+                        <a class="readmore" href="#">Read More</a>
+                    </li>
+                    <li class="block" style="margin-right:0">
+                        <img src="images/index-services-webdesign.png" alt="">
+                        <h3>Web Design</h3>
+                        <hr>
+                        <p>Use the Type Tool (T) to add a block of text underneath the horizontal line.
+                            Use the font Helvetica with the color white and the size 13pt.
+                            Go to the Character panel (Window > Character) and set the leadin</p>
+                        <a class="readmore" href="#">Read More</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--Services结束-->
+        <!--Portfolio开始-->
+        <div class="index-portfolio">
+            <div class="iner-container clearfloat ">
+                <h2>PORTFOLIO</h2>
+                <div class="portfolio-box">
+                    <ul class="portfolio" id="ul1">
+                        <li>
+                            <a href="#">
+                                <img src="images/index-portfolio-1.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/index-portfolio-2.png" alt=""></a></li>
+                        <li style="margin-bottom:0;"><a href="#"><img src="images/index-portfolio-3.png" alt=""></a>
+                        </li>
+                    </ul>
+                    <ul class="portfolio" id="ul1">
+                        <li><a href="#"><img src="images/index-portfolio-4.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/index-portfolio-5.png" alt=""></a></li>
+                        <li style="margin-bottom:0;"><a href="#"><img src="images/index-portfolio-6.png" alt=""></a>
+                        </li>
+                    </ul>
+                    <div class="portfolio-banner">
+                        <div class="close"><img src="./images/index-portfolio-close.png" alt="close" class=""></div>
+                        <img src="./images/index-portfolio1-.png" alt="">
+                        <h3>THE MAKING OF RAPTURE - PAS PREMIUM TUTORIAL</h3>
+                        <p>Use the Type Tool (T) to add a block of text underneath the horizontal line.
+                            Use the font Helvetica with the color white and the size 13pt.
+                            Go to the Character panel</p>
+                        <a href="#" class="readmore">Read More</a>
+                    </div>
+                    <ul class="portfolio" style="margin-right:0;width:180px" id="ul1">
+                        <li><a href="#"><img src="images/index-portfolio-7.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/index-portfolio-8.png" alt=""></a></li>
+                        <li style="margin-bottom:0;"><a href="#"><img src="images/index-portfolio-9.png" alt=""></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <!--Portfolio结束-->
+        <!--Blog开始-->
+        <div class="index-blog">
+            <div class="iner-container clearfloat">
+                <h2>BLOG</h2>
+                <div class="blog-box">
+                    <div class="blog">
+                        <div class="blog-pic"><img src="images/index-blog-1.png" alt="BLOG"></div>
+                        <div class="blog-content">
+                            <h3>TREE HOUSE IN PHOTOSHOP</h3>
+                            <p>Use the Type Tool (T) to add a block of text underneath the horizontal line.
+                                Use the font Helvetica with the color white and the size 13pt.
+                                Go to the Character pane.Use the Type Tool (T) to add a block of text underneath the
+                                horizontal line.
+                                Use the font Hel</p>
+                            <a class="readmore" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blog-pic"><img src="images/index-blog-2.png" alt="BLOG"></div>
+                        <div class="blog-content">
+                            <h3>MATTE PAINTING</h3>
+                            <p>Use the Type Tool (T) to add a block of text underneath the horizontal line.
+                                Use the font Helvetica with the color white and the size 13pt.
+                                Go to the Character pane.Use the Type Tool (T) to add a block of text underneath the
+                                horizontal line.
+                                Use the font Hel</p>
+                            <a class="readmore" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--Blog结束-->
+        <!--Footer开始-->
+        <div class="index-footer">
+            <div class="iner-container clearfloat">
+                <div class="footer-box">
+                    <h2>ABOUT ME</h2>
+                    <hr>
+                    <p>Use the Type Tool (T) to add a block of text underneath the horizontal line.
+                        Use the font Helvetica with the color white and the size 13pt.
+                        Go to the Character panel (Window > Character) and set the leading
+                        (the distance between lines of type) to 24 pt to make the text more readable.
+                        Go to the Character panel</p>
+                    <a href="" class="readmore">Read More</a>
+                </div>
+                <div class="footer-box">
+                    <h2>FOLLOW ME</h2>
+                    <hr>
+                    <p>Use the Type Tool (T) to add a block of text underneath the horizontal line.
+                        Use the font Helvetica with the color white and the size 13pt.
+                        Go to the Character panel (Window > Character) and set the leading
+                        (the distance between lines of type) to 24 pt to make the text more readable.
+                        Go to the Character panel</p>
+                    <a href="" class="readmore">Follow Me</a>
+                </div>
+                <div class="submit-box">
+                    <h2>CONTCT</h2>
+                    <hr>
+                    <form action="">
+                        <input type="text" placeholder="Name" title="Name" class="name">
+                        <input type="text" placeholder="E-Mail" title="E-Mail">
+                        <input type="text" placeholder="Subject" title="Subject">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="message"></textarea>
+                        <a href="#" class="readmore">Read More</a>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">Copyright @ 2012 Envato</div>
+        </div>
+        <!--Footer结束-->
     </div>
-    <div class="index-portfolio"></div>
-    <div class="index-blog"></div>
-    <div class="index-footer"></div>
-    <div class="index-copyright"></div>
-</div>
 
 </body>
+
 </html>

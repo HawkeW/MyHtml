@@ -1,0 +1,89 @@
+/*Header样式开始*/
+.index-header-box{
+    background: url("../images/index-header-bg1.png");
+}
+.index-header {
+    height: 141px;
+    background: url("../images/index-header-gb1.png") no-repeat;
+}
+
+.header-logo {
+    position: absolute;
+    top: 10px;
+    left: 538px;
+}
+
+.index-header>ul {
+    height: 44px;
+}
+
+.navSame {
+    position: absolute;
+    top: 40px;
+    justify-items: auto;
+}
+
+.navSame>li {
+    height: 44px;
+    margin-right: 10px;
+}
+
+.nav-l {
+    left: 80px;
+    width: 500px;
+}
+
+.nav-r {
+    right: 50px;
+    width: 430px;
+}
+
+.item {
+    line-height: 44px;
+    font-size: 17px;
+    width: 114px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.item:hover {
+    background: url("../images/index-header-btn.png");
+}
+
+.item .active {
+    background: url("../images/index-header-btn.png");
+}
+
+/*Header样式结束*/
+.index-container {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.iner-container {
+    position: relative;
+    margin: 0 auto;
+    width: 966px;
+}
+
+.readmore {
+    text-align: center;
+    line-height: 44px;
+    height: 44px;
+    width: 120px;
+    background: url("../images/readmore.png") no-repeat;
+    text-shadow: 0.1em 0.1em #74787c
+}
+
+.readmore:hover {
+    background: url("../images/index-header-btn.png") no-repeat;
+}
+
+.copyright {
+    height: 81x;
+    line-height: 81px;
+    font-size: 13px;
+    color: #9aa0a4;
+    text-align: center;
+}
