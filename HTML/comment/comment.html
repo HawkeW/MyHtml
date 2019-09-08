@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>评论组件</title>
+
+    <script src="JS/vue.js"></script>
+    <script src="JS/main.js"></script>
+    <template>
+
+            <div class="table">
+              
+              <!--region 表格--> */
+              <el-table id="iTable"></el-table>
+              <!--endregion-->
+              
+              <!--region 分页-->
+              <el-pagination></el-pagination>
+              <!--endregion-->
+              
+            </div>
+        
+</template>
+</head>
+
+<body>
+    <div id="root">
+        <!-- 评论发表区开始 -->
+        <div>
+            用户名：<input type="input" placeholder="用户名" v-model="userName"><br />
+            <textarea name="" id="" cols="30" rows="10" placeholder="请输入评论" v-model="userContent"></textarea><br />
+            <button type="submit" @click="handleSubmit">提交评论</button>
+        </div>
+        <!-- 评论发表区结束 -->
+        <!-- 评论显示区开始 -->
+
+        <div>
+            <div style="height:1000px;">
+
+                <commentlist v-for="(item,index) of list" :key="index" :item="item" :index="index">
+                </commentlist>
+            </div>
+            <div>
+                <el-pagination small layout="prev, pager, next" :total="50">
+                </el-pagination>
+            </div>
+
+        </div>
+        <!-- 评论显示区结束 -->
+    </div>
+
+</body>
+
+</html>
