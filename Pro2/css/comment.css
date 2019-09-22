@@ -65,6 +65,7 @@
     position: relative;
     margin: 0 auto;
     width: 966px;
+    overflow: hidden;
 }
 
 .readmore {

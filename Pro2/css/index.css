@@ -1,16 +1,12 @@
 /*Banner部分开始*/
-.index-banner-box{
+.index-banner-box {
     background: url("../images/index-banner-bg1.png");
 }
+
 .index-banner {
     background: url("../images/index-banner-bg.png") no-repeat;
 }
 
-.banner {
-    float: left;
-    height: 380px;
-    width: 966px;
-}
 
 .banner-description {
     float: left;
@@ -35,39 +31,51 @@
     height: 44px;
     width: 115px;
 }
-.banner>li{
-    display: inline;
+
+.banner {
+    height: 348px;
+    width: 6000px;
+    transition: all 1s;
 }
+
+.banner>li {
+    transition: all 1s;
+    width: 966px;
+}
+
 .banner>li>img {
     float: right;
     padding-top: 30px;
 }
 
-.index-banner-next,
-.index-banner-before {
+.arrow {
     position: absolute;
     top: 130px;
     width: 24px;
     height: 82px;
 }
 
-.index-banner-before {
+.arrow :hover {
+    /*变小手*/
+    cursor: pointer;
+ 
+}
+
+#index-banner-before {
     left: 56px;
     background: url("../images/index-banner-before.png") no-repeat;
 }
 
-.index-banner-next {
+#index-banner-next {
     right: 56px;
     background: url("../images/index-banner-next.png") no-repeat;
 }
 
 
 .banner-btn-box {
-    width: 88px;
-    height: 12px;
-    position: absolute;
-    bottom: 20px;
-    left: 397px;
+    width: 50px;
+    height: 32px;
+    margin: 0 auto;
 }
 
 .banner-btn-box li {
@@ -80,7 +88,7 @@
     background: url("../images/index-banner-nav-none.png") no-repeat;
 }
 
-.banner-btn-active,
+.banner-btn > .active,
 .banner-btn:hover {
     background: url("../images/index-banner-nav.png") no-repeat;
 }
@@ -171,21 +179,23 @@
 }
 
 .portfolio-banner>img {
-    float:right;
+    float: right;
     height: 208px;
     width: 341px;
     margin: 18px 0 18px;
 }
-.portfolio-banner>.close{
+
+.portfolio-banner>.close {
     box-sizing: border-box;
     height: 18px;
     width: 18px;
     margin-right: 2px;
     padding-left: 3px;
     float: right;
-    background-color: #484c4f; 
+    background-color: #484c4f;
     background-size: cover;
 }
+
 .portfolio-banner>h3 {
     color: #f0f0f0;
     margin: 15px 20px 5px 20px;
@@ -229,6 +239,7 @@
     width: 180px;
 
 }
+
 .blog-content {
     position: relative;
     float: right;
@@ -236,20 +247,20 @@
     width: 300px;
 }
 
-.blog-content > h3 {
+.blog-content>h3 {
     color: #88949a;
     margin-left: 10px;
     font-size: 20px;
 }
 
-.blog-content > p {
+.blog-content>p {
     margin-left: 16px;
     color: #88949a;
     font-size: 12px;
     line-height: 1.8em;
 }
 
-.blog-content > a {
+.blog-content>a {
     position: absolute;
     right: 5px;
     bottom: 5px;
@@ -298,10 +309,10 @@
 
 }
 
-.submit-box > form > input{
+.submit-box>form>input {
     box-sizing: border-box;
-    padding-left:20px;
-    margin-bottom: 10px; 
+    padding-left: 20px;
+    margin-bottom: 10px;
     height: 33px;
     font-size: 10px;
     width: 218px;
@@ -309,13 +320,13 @@
 
 .message {
     box-sizing: border-box;
-    padding-top:10px;
+    padding-top: 10px;
     padding-left: 20px;
     height: 126px;
     width: 303px;
 }
 
-.submit-box >a  {
+.submit-box>a {
     font-size: 14px;
 }
 

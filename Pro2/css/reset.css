@@ -10,6 +10,9 @@ h2{
 ol, li, ul{
     list-style:none;
 }
+button{
+    border:0px;
+}
 li{
     display: inline-block
 }
