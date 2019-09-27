@@ -1,87 +1,71 @@
 var count = 0;
-var isgo = false;
 var timer;
 
-window.onload = function () {
+window.onload = function() {
+  var banner = document.getElementById("banners");
+  var bannerContent = document.getElementsByClassName("banner-box");
+  //获取控制方向的箭头元素
+  var arrow = document.getElementsByClassName("arrow");
+  var bannerButton = this.document.getElementsByClassName("banner-btn-box")[0]
+    .childNodes;
+  bannerButton[0].setAttribute("class", "banner-btn-active");
+  var offset = 0;
 
-    var banner = document.getElementById("banners");
-    //获取控制方向的箭头元素
-    var arrow = document.getElementsByClassName("arrow");
-    var bannerButton = document.getElementsByClassName("banner-btn");
-    bannerButton[0].setAttribute("class","banner-btn active");
+  //自动切换banner
+  showtime();
+  function showtime() {
+    timer = setInterval(function() {
+      if (count < bannerContent.length) {
+        bannerButton[count].setAttribute("class", "banner-btn-active");
+        updateBanner();
+        count++;
+      } else {
+        count = 0;
+      }
+    }, 2000);
+  }
+  //给三角按钮绑定onmouseover、onmouseout、onclick事件
+  for (let i = 0; i < arrow.length; i++) {
+    arrow[i].onmouseover = function() {
+      clearInterval(timer);
+    };
+    arrow[i].onmouseout = function() {
+      showtime();
+    };
 
-    showtime();
-    function showtime() {
-        timer = setInterval(function () {
-            // alert("执行了");
-            if (isgo === false) {
-
-                if (count > 2) {
-                    count = 0;
-                } else { 
-                    
-                    banner.style.transform = "translate(" + -968 * count + "px)";
-                    count++;
-                }
-
-            }
-            for (var i = 0; i < bannerButton.length; i++) {
-                bannerButton[i].setAttribute("class","banner-btn");
-            }
-            bannerButton[count].setAttribute("class","banner-btn active");
-
-        }, 3000);
-    }
-        for (var i = 0; i < arrow.length; i++) {
-            //鼠标悬停时
-            arrow[i].onmouseover = function () {
-                //停止计时器
-                clearInterval(timer);
-            }
-            //鼠标离开时
-            arrow[i].onmouseout = function () {
-                //添加计时器
-                showtime();
-            }
-            arrow[i].onclick = function () {
-                //区分左右
-                if (this.title == 0) {
-                    count++;
-                    if (count > 2) {
-                        count = 0;
-                    }
-                } else {
-                    count--;
-                    if (count < 0) {
-                        count = 2;
-                    }
-                }
-                banner.style.transform = "translate(" + -968 * count + "px)";
-            }
+    arrow[i].onclick = function() {
+      if (this.title == 0) {
+        if (count < bannerContent.length - 1) {
+          count++;
+        } else {
+          count = 0;
         }
-
-        for (var b = 0; b < bannerButton.length; b++) {
-            bannerButton[b].index = b;
-            bannerButton[b].onmouseover = function () {
-                
-                clearInterval(timer);
-
-                for (var a = 0; a < bannerButton.length; a++) {
-                    bannerButton[a].setAttribute = ("class","banner-btn");
-                }
-                // bannerButton[a].setAttribute("class","banner-btn-active");
-                if (this.index == 2) {
-                    isgo = true;
-                }
-                if (this.index == 0) {
-                    isgo = false;
-                }
-                count = this.index;
-                banner.style.transform = "translate(" + -968 * this.index + "px)";
-            }
-            bannerButton[b].onmouseout = function () {         
-                showtime();
-            }
-        }
-}
-    
+      } else if (count == 0) {
+        count = bannerContent.length - 1;
+      } else {
+        count--;
+      }
+      updateBanner();
+    };
+  }
+  //给圆按钮绑定onclick事件
+  for (let i = 0; i < bannerButton.length; i++) {
+    bannerButton[i].onmouseover = function() {
+      count = i;
+      clearInterval(timer);
+      updateBanner();
+    };
+    bannerButton[i].onmouseout = function() {
+      showtime();
+    };
+  }
+  //banner切换方法
+  function updateBanner() {
+    offset = -970 * count + "px";
+    banner.style.marginLeft = offset;
+    bannerButton.forEach(element => {
+      element.setAttribute("class", "banner-btn");
+    });
+    bannerButton[count].setAttribute("class", "banner-btn-active");
+  }
+};
