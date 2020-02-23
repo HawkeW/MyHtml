@@ -1,0 +1,8 @@
+
+.btn-area{
+}
+.btn-area > button {
+  display: inline-block;
+ width: 200rpx;
+}
+

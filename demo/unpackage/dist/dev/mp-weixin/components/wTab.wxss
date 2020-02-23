@@ -1,0 +1,28 @@
+
+.w-tab {
+    width: 100%;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+.w-tab-item {
+    display: inline-block;
+}
+.home-tab-item:first-child {
+    margin-left: 0;
+}
+.home-tab-item {
+    font-size: 16px;
+    color: #fff;
+    margin: 0 11px;
+    opacity: .7;
+    box-sizing: border-box;
+}
+.home-active-tab-item {
+  -webkit-transition: 80;
+  transition: 80;
+    font-size: 18px;
+    opacity: .8;
+    font-weight: 700;
+    border-bottom: 2px solid #fff;
+}
+

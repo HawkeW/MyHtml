@@ -1,0 +1,74 @@
+
+.hide{
+  display:none;
+}
+.w-search{
+  width: 100%;
+  padding: 5px 15px;
+	box-sizing: border-box;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.w-search-input{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  font-size: 16px;
+}
+.uni-input-form, .uni-input-wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.uni-input-form, .uni-input-input, .uni-input-placeholder, .uni-input-wrapper {
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: inherit;
+}
+.uni-input-placeholder {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: grey;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: pre;
+    word-break: keep-all;
+    pointer-events: none;
+}
+.w-search-text{
+    color: #b2aeae;
+    font-size: 16px;
+}
+.uni-input-input, .uni-input-placeholder {
+    width: 100%;
+}
+.iconfont{
+  font-family: iconfont!important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.w-search-icon{
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  color: #b2aeae;
+  margin-left: 15px;
+}
+.iconsearch:before{
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABrElEQVQ4T52ST4jNURTHP+f9ViywkMjGSlFjcc99SZJZWVnMxkpJUjQL21lIomQxFvKsLP1JEUtlNVIWXvfch2YxmBRJtqy939Hv9e7rh+FN7up07z2f8+f7FVpnMBjsqut6HtgHHHD3ryKSgRVVvdT+W2IpgZmdBG4C94A3IvJhOBxurqpqp7sfBna7+1yMcaUNGgHM7BDwHIiqamtVMrPjwF133xJj/DbpIKW0FXgLnI0xPlwrudXlbeCHqp6aAHLO19x9m6qe+FdyC/JaRC6HEB41d5JzXnL3+6p6a52AO8AnVT0/ApjZd+CYqj5dDyCldBWYiTEeLYBVEVkoLU2DmFlPRDaEEE4XwONGAVW9Pi15rFgz+5KqNpKPRrgIHFHVg9MAOee9wEt3ny1yj3wwXuSzv7mtpcALYFlVz/zixJTSDhH5IiLnQgi93zsZvy8CjZkW3f1KMdPEyv1+f3tVVQ+AjcAq8FFENtV13cBn3b0XY7xgZu/d/Z27L3S73eUJoFRNKc2JSDPrfuAz8KqZsm1xM3sC7BGR+T8A0xbZKnSj0+nM/DeggH4Ck8O37R/RhCcAAAAASUVORK5CYII=);
+}
+
+

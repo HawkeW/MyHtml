@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "w-link-card": "/components/wLinkCard",
+    "w-search": "/components/wSearch",
+    "w-tab": "/components/wTab"
+  }
+}
